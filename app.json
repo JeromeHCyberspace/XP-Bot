@@ -1,0 +1,16 @@
+{
+    "env": {
+      "API_TOKEN": "Your api token from the settings page on hackcyber.space",
+      "TARGET": "The target IP (e.g. 127.0.0.1)"
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/php"
+      }
+    ],
+    "addons": [
+      "papertrail",
+      "scheduler"
+    ],
+    "success_url": "/index.php"
+  }
